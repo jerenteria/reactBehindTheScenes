@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Button from './components/UI/Button/Button';
 import './App.css';
-import DemoOutPut from './Demo/DemoOutpust';
+import DemoOutPut from './Demo/DemoOutput';
 
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
       <h1>Hi there!</h1>
       {/* click button to show paragraph */}
       {/* {showParagraph && <p>This is a new paragraph!</p>} */}
-      <DemoOutPut show={showParagraph}/>
+      <DemoOutPut show={false}/>
       <Button onClick={toggleParagraphHandler}>Button</Button>
     </div>
   );
