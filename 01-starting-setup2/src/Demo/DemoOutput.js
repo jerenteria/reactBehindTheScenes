@@ -6,6 +6,8 @@ const DemoOutput = (props) => {
     return <p>{props.show ? 'This is new!' : ''}</p>
 };
 
+// memo tells react that whenever the app component changes it should go  to above component and compare new prop val to old prop val
+// react needs to store old prop val and compare to new prop val
 export default React.memo(DemoOutput);
 
 
